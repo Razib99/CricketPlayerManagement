@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="263.0" layoutX="-12.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/Cricket RED.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="addplayerButton" layoutX="44.0" layoutY="122.0" mnemonicParsing="false" onAction="#addPlayerAction" prefHeight="27.0" prefWidth="197.0" style="-fx-background-color: #cc0000;" text="Add Player" textFill="#fcf9f9" />
+                <Button fx:id="showrosterButton" layoutX="44.0" layoutY="244.0" mnemonicParsing="false" onAction="#RosterController" prefHeight="27.0" prefWidth="197.0" style="-fx-background-color: #cc0000#cc0000;" text="Show Roster" textFill="#eeebeb" />
+                <Button fx:id="removeplayerButton" layoutX="44.0" layoutY="184.0" mnemonicParsing="false" onAction="#RemoveController" prefHeight="27.0" prefWidth="197.0" style="-fx-background-color: #cc0000;" text="Remove Player" textFill="#f8f5f5" />
+                <Button fx:id="cancelButton" layoutX="44.0" layoutY="302.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="27.0" prefWidth="197.0" style="-fx-background-color: #cc0000;" text="Close" textFill="#f8f5f5" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

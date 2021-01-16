@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RemoveController">
+   <children>
+      <AnchorPane fx:id="RemoveController" prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #cc0000;">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="76.0" layoutX="47.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Remove.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fcf7f7" layoutX="119.0" layoutY="49.0" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Player" wrappingWidth="170.0">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="rosterView" layoutX="12.0" layoutY="82.0" prefHeight="262.0" prefWidth="495.0">
+<!--        <columns>-->
+<!--          <TableColumn fx:id="no" prefWidth="50.0" text="No" />-->
+<!--          <TableColumn fx:id="playerName" prefWidth="170.0" text="Player Name" />-->
+<!--            <TableColumn fx:id="jerseyNumber" prefWidth="116.0" text="Jersey Number" />-->
+<!--            <TableColumn fx:id="salary" prefWidth="141.0" text="Salary" />-->
+<!--            <TableColumn fx:id="p_Address" prefWidth="141.0" text="Address" />-->
+<!--            <TableColumn fx:id="f_Position" prefWidth="141.0" text="Fielding Position" />-->
+<!--        </columns>-->
+      </TableView>
+      <Button fx:id="deleteButton" layoutX="57.0" layoutY="358.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #cc0000;" text="Delete" textFill="#fffdfd" />
+      <Button fx:id="cancelButton" layoutX="288.0" layoutY="358.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #cc0000;" text="Cancel" textFill="#fcfcfc" />
+   </children>
+</AnchorPane>
